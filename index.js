@@ -35,7 +35,6 @@ function generate() {
       z: STAR_MIN_SCALE + Math.random() * ( 1 - STAR_MIN_SCALE )
     });
    }
-
 }
 
 function placeStar( star ) {

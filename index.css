@@ -204,7 +204,6 @@ canvas {
    animation-fill-mode:forwards;
    opacity: .1;
 }
-
 @-webkit-keyframes pulse{
   0%{
     opacity: 0.5;
