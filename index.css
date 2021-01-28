@@ -21,19 +21,23 @@ canvas {
     position: absolute ; 
     
 }
-#geek_logo:hover{
+#a:hover{
     zoom: 100%;
     animation-duration: 4s;
     animation-name: bounce-5;
     animation-timing-function: ease-in;
     animation-timing-function: ease-out;
 }
-@keyframes bounce-5 {
+@keyframes bounce-5 
+{
     50%  { transform: scale(0,0) translateZ(0); }
 }
 .navbar{
     font-family: 'Cinzel Decorative', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-right: 3vw;
+    position: absolute;
+    font-size: x-large;
+    color: #e24b37;  
 }
 .navbar:hover{
     background-color: #000000;
@@ -46,31 +50,19 @@ canvas {
 #nav1{
     right: 38vw;
     top: 3vh;
-    position: absolute;
-    font-size: x-large;
-    color: #e24b37;  
 }
-  #nav2{
-    right: 30vw;
-    top: 3vh;
-    position: absolute;
-    font-size: x-large;
-    color: #e24b37;  
-  }
-  #nav3{
-    right: 14vw;
-    top: 3vh;
-    position: absolute;
-    font-size: x-large;
-    color: #e24b37;  
-  }
-  #nav4{
-    right: 3vw;
-    top: 3vh;
-    position: absolute;
-    font-size: x-large;
-    color: #e24b37;  
-  }
+#nav2{
+  right: 30vw;
+  top: 3vh;
+}
+#nav3{
+  right: 14vw;
+  top: 3vh;  
+}
+#nav4{
+  right: 3vw;
+  top: 3vh;
+}
 .topnav{
     font-family: 'Cinzel Decorative', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     visibility: hidden;
@@ -88,7 +80,6 @@ canvas {
     text-align: left;
     font-weight: bold;
     font-family: 'Cinzel Decorative', cursive;
-    transition :transform 3s;
 }
 .content1:hover{
     letter-spacing: 1px;
@@ -104,8 +95,21 @@ canvas {
     top: 20vh;
     left: 61.5vw;
     border-radius: 40%;
-    border:2px #232526;
+    border: solid 3px #ec4d37;
 }
+.hover06 figure:hover img {
+	-webkit-transform: rotate(15deg) scale(1.4);
+	transform: rotate(15deg) scale(1.1);
+	-webkit-transition: 3s ease-in-out;
+    transition: 3s ease-in-out;
+
+    -webkit-transform: rotate(180deg) scale(-1.4);
+	transform: rotate(180deg) scale(-1.1);
+	-webkit-transition: 3s ease-in-out;
+    transition: 3s ease-in-out;
+    
+}
+
 #d1{
     background-color: #393d3f ;
     border: solid 4px #ec4d37;
@@ -128,6 +132,94 @@ canvas {
     left: 72vw;
     transform: rotateZ(-50deg);
 } 
+#cross1{
+  top: 180px;
+  left: 900px;
+  color: #ec4d37;
+  position: absolute;
+  opacity: .5;
+}
+#cross1:hover{
+  transform: rotateY(3600deg);
+  transition: 10s;
+  opacity: 1;
+}
+#cross4{
+  top: 555px;
+  left: 1345px;
+  color: #ec4d37;
+  position: absolute;
+  opacity: .5;
+}
+#cross4:hover{
+  transform: rotateY(3600deg);
+  transition: 10s;
+  opacity: 1;
+}
+#cross2{
+  top: 175px;
+  left: 1340px;
+  color: #ec4d37;
+  position: absolute;
+  opacity: .5;
+}
+#cross2:hover{
+  transform: rotateY(3600deg);
+  transition: 10s;
+  opacity: 1;
+}
+#cross3{
+  top: 550px;
+  left: 890px;
+  color: #ec4d37;
+  position: absolute;
+  opacity: .5;
+}
+#cross3:hover{
+  transform: rotateY(3600deg);
+  transition: 10s;
+  opacity: 1;
+}
+.stamp{
+  height:50px;
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: bold;
+  width:400px;
+  left:20vw;
+  top: 65vh;
+  font-size: xx-large;
+  text-align: center;
+  padding-top: 10px;
+  border-radius:5px;
+  position:relative;
+  background-color:#ec4d37;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  animation-delay:2.5s;
+  -webkit-animation-delay:.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  opacity: 0;
+  -webkit-animation-fill-mode:forwards;
+   animation-fill-mode:forwards;
+   opacity: .1;
+}
+
+@-webkit-keyframes pulse{
+  0%{
+    opacity: 0.5;
+  }
+  10%{
+    opacity:.50;
+    transform-origin: 50% 50%;
+    transform: rotate(-2deg) scale(5);
+    transition: all .3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  }
+  100%{
+    opacity:.8;
+    transform: rotate(-15deg) scale(1);
+  }
+}
 #MiniLeftNav{
     position: absolute;
     top: 61vh;
@@ -141,362 +233,203 @@ canvas {
                 transition:  10px;
                 }
 #rotate:hover{
-                transition: 2s;
-                zoom: 160%;
-                transform: rotateZ(360deg);
-                }
-.hover06 figure:hover img {
-	-webkit-transform: rotate(15deg) scale(1.4);
-	transform: rotate(15deg) scale(1.1);
-	-webkit-transition: 3s ease-in-out;
-    transition: 3s ease-in-out;
-
-    -webkit-transform: rotate(180deg) scale(-1.4);
-	transform: rotate(180deg) scale(-1.1);
-	-webkit-transition: 3s ease-in-out;
-    transition: 3s ease-in-out;
-    
-}
-.hover06 figure img {
-	-webkit-transform: rotate(0) scale(1);
-	transform: rotate(0) scale(1);
-}
+          transition: 2s;
+          zoom: 160%;
+          transform: rotateZ(360deg);
+          }
 
 
-.stamp{
-    height:50px;
-    font-family: 'Cinzel Decorative', cursive;
-    font-weight: bold;
-    width:400px;
-    left:20vw;
-    top: 65vh;
-    font-size: xx-large;
-    text-align: center;
-    padding-top: 10px;
-    border-radius:5px;
-    position:relative;
-    background-color:#ec4d37;
-    -webkit-animation-name: pulse;
-    animation-name: pulse;
-    animation-delay:2.5s;
-    -webkit-animation-delay:.5s;
-    -webkit-animation-duration: 0.5s;
-    animation-duration: 0.5s;
+@media only screen and (max-width: 1000px)
+ 
+{
+  body{
+    width: 1000px;
+    height: 160vh;
+    }
+  .navbar{
+      visibility: hidden;
+    }
+  .topnav{
+      visibility: visible;
+    }
+  .dropbtn{
+      background-color: black;
+      color: #ec4d37;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      border-radius: 30%;
+      width: fit-content  ;
+    }
+          
+  .dropdown{ 
+        position: absolute;
+        display: inline-block;
+        left:90vw;
+        top: 4vh;
+    }
+          
+  .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: black;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+  .dropdown-content a{
+        color: #ec4d37;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+  .dropdown-content a:hover{
+        background-color: #ec4d37;
+        color:black;
+        text-align: center;
+        left:-11vw;
+    }
+  .dropdown:hover .dropdown-content { 
+        display: block;
+        left:-11vw;
+    }
+  .dropdown:hover .dropbtn{
+        background-color: #ec4d37;
+        color:black;
+        text-align: center;
+        left:-11vw;
+    }
+  #neymar{
+    left: 250px;
+  }
+  #d1{
+    left: 430px;
+  }
+  #d2
+  {
+  left: 430px;
+  }
+  #cross1{
+    left: 250px;
+  }
+  #cross2{
+    left:701px ;
+  }
+  #cross3{
+  left: 250px;
+  }
+  #cross4{
+    left: 695px;
+    }
+  #content{
+    top: 90vh;
+    width: 600px;
+    color: #e63c26;
+    left: 210px;
+  }
+  #MiniLeftNav{
+    top: 125vh;
+    left: .8vw;
+    position: absolute; 
+  }
+  #list{
+  letter-spacing: 3vw ;
+  }
+  .stamp{
+    top: 144vh;
+    left: 500px;
     opacity: 0;
-    -webkit-animation-fill-mode:forwards;
-     animation-fill-mode:forwards;
-     opacity: .1;
+    height: 35px;
+    width: 300px;
+    font-size: x-large;
   }
-  
-  @-webkit-keyframes pulse{
-    0%{
-      opacity: 0.5;
-    }
-    10%{
-      opacity:.50;
-      transform-origin: 50% 50%;
-      transform: rotate(-2deg) scale(5);
-      transition: all .3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
-    }
-    100%{
-      opacity:.8;
-      transform: rotate(-15deg) scale(1);
-    }
-  }
-  .stamp:hover{
-      transform: rotateX(180deg);
-      transform: 2s;
-  }
-  @media only screen and (max-width: 1000px)
+  @-webkit-keyframes pulse
   {
-      body{
-          width: 1000px;
-          height: 150vh;
-      }
-    .navbar{
-        visibility: hidden;
-    }
-    .topnav{
-        visibility: visible;
-    }
-        .dropbtn {
-            background-color: black;
-            color: #ec4d37;
-            padding: 16px;
-            font-size: 16px;
-            border: none;
-            border-radius: 30%;
-            width: fit-content  ;
-          }
-          
-          .dropdown {
-            position: absolute;
-            display: inline-block;
-            left:90vw;
-            top: 4vh;
-            }
-          
-          .dropdown-content
-           {
-            display: none;
-            position: absolute;
-            background-color: black;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-          }
-          
-          .dropdown-content a
-          {
-            color: #ec4d37;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: center;
-          }
-          .dropdown-content a:hover
-          {
-           background-color: #ec4d37;
-           color:black;
-           text-align: center;
-           left:-11vw;
-          }
-          .dropdown:hover .dropdown-content 
-          { 
-           display: block;
-           left:-11vw;
-          }
-          .dropdown:hover .dropbtn  
-          {
-           background-color: #ec4d37;
-           color:black;
-           text-align: center;
-           left:-11vw;
-          }
-          #neymar{
-            left: 250px;
-        }
-        #d1{
-            left: 430px;
-        }
-        #d2
-        {
-          left: 430px;
-        }
-
-          #content{
-            top: 90vh;
-            width: 600px;
-            color: #e63c26;
-            left: 210px;
-        }
-        .stamp{
-            top: 149.5vh;
-            left: 300px;
-            opacity: 0;
-            height: 35px;
-            width: 300px;
-            font-size: x-large;
-        }
-        @-webkit-keyframes pulse
-        {
-          0%{
-            opacity: 0.5;
-          }
-          10%{
-            opacity:.50;
-            transform-origin: 50% 50%;
-            transform: rotate(-2deg) scale(5);
-            transition: all .3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
-          }
-          100%{
-            opacity:.8;
-            transform: rotate(29deg) scale(1);
-          }
-        }
-        #MiniLeftNav{
-            top: 115vh;
-            left: .8vw;
-            position: absolute; 
-        }
-        #list{
-          letter-spacing: 3vw ;
-        }
-        .stamp{
-            top: 132vh;
-            left: 500px;
-            opacity: 0;
-            height: 35px;
-            width: 300px;
-            font-size: x-large;
-        }
-        @-webkit-keyframes pulse
-        {
-          0%{
-            opacity: 0.5;
-          }
-          10%{
-            opacity:.50;
-            transform-origin: 50% 50%;
-            transform: rotate(-2deg) scale(5);
-            transition: all .3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
-          }
-          100%{
-            opacity:1;
-            transform: rotate(-29deg) scale(1);
-          }
-        }
-        #geek_logo:hover{
-            zoom: 110%;
-            animation-duration: 4s;
-            animation-name: bounce-5;
-            animation-timing-function: ease-in;
-            animation-timing-function: ease-out;
-        }
-        
-        @keyframes bounce-5 {
-            50%  { transform: scale(0,0) translateZ(0); }
-        }
+  100%{
+    opacity:1;
+    transform: rotate(-29deg) scale(1);
+  }
 }
-  
+
   @media only screen and (max-width: 640px)
+
+{
+  body{
+  height: 180vh;
+  width: 640px;
+  }
+  .dropdown {
+    left:85vw; 
+  }
+  .dropdown-content a:hover
   {
-      body{
-          height: 165vh;
-          width: 640px;
-      }
-      #MiniLeftNav{
-          top: 148vh;
-          left: 50vw;
-          position: absolute;
-          transform: rotateZ(-35deg);
-          
-      }
-      #list{
-        float: left;
-        letter-spacing: 3vw ;
-      }
-      #rotate:hover{
-        transition: 2s;
-        zoom: 100%;
-        transform: rotateZ(360deg);
-        }
-      #list:hover{
-          transform: .5s;
-          zoom: 0%;
-      }
-      #neymar{
-          left: 70px;
-      }
-      #d1{
-          left: 270px;
-      }
-      #d2
-      {
-        left: 270px;
-      }
-      .navbar{
-          visibility: hidden;
-      }
-      .topnav{
-        font-family: 'Cinzel Decorative', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    left:-15vw;
+  } 
+  .dropdown:hover .dropdown-content 
+  { 
+    left:-15vw;
+  }
+  .dropdown:hover .dropbtn  
+  {
+    left:-15vw;
+  }
+  #neymar{
+  left: 70px;
+  }
+  #d1{
+  left: 270px;
+  }
+  #d2
+  {
+  left: 270px;
+  }
+  #cross1{
+    left: 70px;
+  }
+  #cross2{
+    left:520px ;
+  }
+  #cross3{
+  left: 75px;
+  }
+  #cross4{
+    left: 515px;
     }
-      #content{
-          top: 90vh;
-          width: 400px;
-          color: #e63c26;
-          left: 130px;
-      }
-      .stamp{
-          top: 149.5vh;
-          left: 08px;
-          opacity: 0;
-          height: 35px;
-          width: 300px;
-          font-size: x-large;
-      }
-      @-webkit-keyframes pulse
-      {
-        0%{
-          opacity: 0.5;
-        }
-        10%{
-          opacity:.50;
-          transform-origin: 50% 50%;
-          transform: rotate(-2deg) scale(5);
-          transition: all .3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
-        }
-        100%{
-          opacity:.8;
-          transform: rotate(29deg) scale(1);
-        }
-    }
-    #geek_logo:hover{
-        zoom: 110%;
-        animation-duration: 4s;
-        animation-name: bounce-5;
-        animation-timing-function: ease-in;
-        animation-timing-function: ease-out;
-    }
-    
-    @keyframes bounce-5 {
-        50%  { transform: scale(0,0) translateZ(0); }
-    }
-    .topnav{
-        visibility: visible;
-    }
-        .dropbtn {
-            background-color: black;
-            color: #ec4d37;
-            padding: 16px;
-            font-size: 16px;
-            border: none;
-            border-radius: 30%;
-            width: fit-content;
-          }
-          
-          .dropdown {
-            position: absolute;
-            display: inline-block;
-            left:85vw;
-            top: 4vh;
-            
-          }
-          
-          .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: black;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-          }
-          
-          .dropdown-content a
-          {
-            color: #ec4d37;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: center;
-          }
-          .dropdown-content a:hover
-          {
-           background-color: #ec4d37;
-           color:black;
-           text-align: center;
-           left:-15vw;
-          }
-          .dropdown:hover .dropdown-content 
-          { 
-           display: block;
-           left:-15vw;
-          }
-          .dropdown:hover .dropbtn  
-          {
-           background-color: #ec4d37;
-           color:black;
-           text-align: center;
-           left:-15vw;
-          }
+  #content{
+  top: 90vh;
+  width: 400px;
+  left: 130px;
+  }
+  .stamp{
+  top: 163.5vh;
+  left: 08px;
+  opacity: 0;
+  height: 35px;
+  width: 300px;
+  font-size: x-large;
+  }
+  @-webkit-keyframes pulse
+  {
+  100%{
+  opacity:.8;
+  transform: rotate(29deg) scale(1);
+  }
+  }
+
+#MiniLeftNav{
+  top: 162vh;
+  left: 50vw;
+  transform: rotateZ(-35deg);
+  }
+  #list{
+  float: left;
+  letter-spacing: 3vw ;
+  }
+  #rotate:hover{
+  transition: 2s;
+  zoom: 100%;
+  }
+}
 }
